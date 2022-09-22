@@ -5,7 +5,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import Rating from '@material-ui/lab/Rating';
 
 
-import useStyles from './styles';
+import useStyles from './PlaceDetailsStyles';
 
 
 const PlaceDetails = ({ place, selected, refProp }) => {

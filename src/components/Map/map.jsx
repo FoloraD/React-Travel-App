@@ -5,7 +5,7 @@ import { Paper, Typography, useMediaQuery } from '@mui/material';
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined"
 import  Rating  from '@material-ui/lab/Rating';
 
-import useStyles from './styles.js'
+import useStyles from './MStyles.js'
 import mapStyles from './mapStyles.js';
 
 const Map = ({setCoordinates, setBounds, coordinates, places, setChildClicked }) => {
@@ -16,7 +16,7 @@ const Map = ({setCoordinates, setBounds, coordinates, places, setChildClicked })
     return (
         <div className={classes.mapContainer}>
             <GoogleMapReact
-                bootstrapURLKeys={{ key: process.env.REACT_APP_MAP_API_KEY }}
+                bootstrapURLKeys={{ key: process.env.REACT_APP_GOOGLE_MAPS_API_KEY }}
                 defaultCenter={coordinates}
                 center={coordinates}
                 defaultZoom={14}
